@@ -1,0 +1,9 @@
+.header {
+  height: 60px;
+  background: #333;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80vw;
+}

@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Editor from "@monaco-editor/react";
+import styles from './App.module.css'
+
+const Header = () => (
+  <div className={styles.header}>
+  </div>
+)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <Header />
+       <Editor
+         height="50vh"
+         defaultLanguage="javascript"
+         defaultValue="// start coding"
+       />
     </div>
   );
 }
